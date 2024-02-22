@@ -44,7 +44,7 @@ print("Tracking Link:", tracking_link)
 
 # Retrieve data from the tracking link
 # Replace the example URL with your generated tracking link
-# tracker.link_data("https://yourdomain.com/link/your_tracking_key")
+# tracker.link_data("https://xxxxxxxx.com/link/your_tracking_key")
 ```
 
 ## Example
@@ -72,7 +72,7 @@ print("Tracking Link:", tracking_link)
 
 # Retrieve data from the tracking link
 # Replace the example URL with your generated tracking link
-tracker.link_data(tracking_link)
+tracker.link_data(tracking_link, location=True)
 """Processing Link Data...
 
 
