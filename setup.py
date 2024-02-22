@@ -2,11 +2,13 @@ from setuptools import setup, find_packages
 
 setup(
     name='iptracker',
-    version='1.0.0',
+    version='1.0.1',
     packages=find_packages(),
     install_requires=['requests'],
     author='Ishan Oshada',
     author_email='ishan.kodithuwakku.official@email.com',
+    long_description=open('README.md').read(),
+    long_description_content_type='text/markdown',
     description='A Python package for tracking IP addresses and their locations.',
     url='https://github.com/ishanoshada/iptracker',
     classifiers=[
