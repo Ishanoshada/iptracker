@@ -57,8 +57,8 @@ from iptracker import IPTracker
 # Initialize IPTracker with your credentials
 username = "your_username"
 password = "your_password"
-redirect_url = "/"
-tracker = IPTracker(username, password, redirect_url)
+redirect_url = "https://github.com/Ishanoshada/iptracker/"
+tracker = IPTracker(username, password, redirect_url,location=True)
 
 # Create an account
 # print(tracker.create_account())
@@ -72,7 +72,7 @@ print("Tracking Link:", tracking_link)
 
 # Retrieve data from the tracking link
 # Replace the example URL with your generated tracking link
-tracker.link_data(tracking_link, location=True)
+tracker.link_data(tracking_link)
 """Processing Link Data...
 
 
