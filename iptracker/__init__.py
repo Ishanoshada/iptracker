@@ -6,6 +6,7 @@ import random
 import re
 
 
+
 links = ["https://bbbbbbbb-three.vercel.app/", "https://aaaaaaaaaaaaaaa-sigma.vercel.app"]
 
 
@@ -128,4 +129,42 @@ class IPTracker:
                 if location_info:
                     self.print_ip_info(location_info)
 
+
+def main():
+
+    print("Welcome to the IP Tracker!")
+    print("Please enter your credentials:")
+    username = input("Username: ")
+    password = input("Password: ")
+    redirect_url = input("Redirect URL: ")
+    location = input("Do you want to track IP location? (Y/N): ").lower() == 'y'
+    
+    tracker = IPTracker(username, password, redirect_url, location)
+    while True:
+        print("\nMenu:")
+        print("1. Create Account")
+        print("2. Login")
+        print("3. Generate Link")
+        print("4. Track Link Data")
+        print("5. Exit")
+        choice = input("Enter your choice (1-5): ")
+
+        if choice == '1':
+            if tracker.create_account():
+                print("Account created successfully.")
+        elif choice == '2':
+            if tracker.login():
+                print("Login successful.")
+        elif choice == '3':
+            generated_link = tracker.generate_link()
+            if generated_link:
+                print("Generated link:", generated_link)
+        elif choice == '4':
+            url = input("Enter the link URL: ")
+            tracker.link_data(url)
+        elif choice == '5':
+            print("Exiting program...")
+            break
+        else:
+            print("Invalid choice. Please enter a number between 1 and 5.")
 
