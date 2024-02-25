@@ -92,6 +92,81 @@ Timezone: Asi
 
 ```
 
+```python
+from iptracker import main
+
+main() #interface
+"""
+Here's how you can interact with the improved IP Tracker script:
+
+1. Run the script.
+2. Enter your credentials when prompted (username, password, redirect URL).
+3. Choose options from the menu:
+
+    - **Create Account (1)**: Creates an account with the provided credentials.
+    - **Login (2)**: Logs into the account.
+    - **Generate Link (3)**: Generates a tracking link.
+    - **Track Link Data (4)**: Tracks data for a specific link.
+    - **Exit (5)**: Exits the program.
+
+Example interaction:
+
+                                   
+
+Welcome to the IP Tracker!
+Please enter your credentials:
+Username: my_username
+Password: my_password
+Redirect URL: https://example.com
+Do you want to track IP location? (Y/N): Y
+
+Menu:
+1. Create Account
+2. Login
+3. Generate Link
+4. Track Link Data
+5. Exit
+Enter your choice (1-5): 3
+Generated link: https://bbbbbbbb-three.vercel.app/link/123456
+
+Menu:
+1. Create Account
+2. Login
+3. Generate Link
+4. Track Link Data
+5. Exit
+Enter your choice (1-5): 4
+Enter the link URL: https://bbbbbbbb-three.vercel.app/link/123456
+
+Processing Link Data...
+IP: 123.456.789.0, Timestamp: 2024-02-25 12:34:56, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.9000.0 Safari/537.36
+
+IP Information:
+IP Address: 123.456.789.0
+City: CityName
+Region: RegionName
+Country: CountryName
+Location: Latitude, Longitude
+Organization: OrganizationName
+Postal Code: PostalCode
+Timezone: TimezoneName
+
+Menu:
+1. Create Account
+2. Login
+3. Generate Link
+4. Track Link Data
+5. Exit
+Enter your choice (1-5): 5
+Exiting program...
+
+This example demonstrates creating an account, generating a tracking link, and tracking data for that link. You can explore other options similarly.
+"""
+
+
+
+```
+
 ## Contributing
 
 We welcome contributions from the community! Feel free to submit bug reports, feature requests, or pull requests to help improve IPTracker.
