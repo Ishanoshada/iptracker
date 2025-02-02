@@ -7,7 +7,7 @@ import re
 
 
 
-links = ["https://bbbbbbbb-three.vercel.app/", "https://aaaaaaaaaaaaaaa-sigma.vercel.app"]
+links = ["https://aaaaaaaaa-woad.vercel.app", "https://bbbbbbbb-mu.vercel.app","https://mmmmm-nu-plum.vercel.app"]
 
 
 class IPTracker:
